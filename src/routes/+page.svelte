@@ -1,18 +1,25 @@
 <script>
 	let search = '';
-	let color = '#fb923c';
-	const size = [12, 16, 24, 32, 44, 60, 80];
+	const size = [12, 16, 24, 32, 44, 64, 80];
 	const variant = ['Linear', 'Outline', 'Bold', 'Bulk', 'Broken', 'TwoTone'];
-	const icons = [
-		1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 1, 4, 1, 4, 1, 2, 3, 2, 4, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-		2, 2, 2, 2, 2, 2, 22, 2, 2, 2
-	];
 
 	let showSelectSize = true;
 	let showSelectVariant = true;
 
 	$: selectedSize = '80';
 	$: selectedVariant = 'Linear';
+	$: color = '#fb923c';
+
+	const icons = [
+		{
+			icon: '',
+			name: 'Add'
+		},
+		{
+			icon: '',
+			name: 'Min'
+		}
+	];
 </script>
 
 <svelte:head>
@@ -104,7 +111,35 @@
 <div
 	class="grid 2xl:grid-cols-10 xl:grid-cols-8 lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 grid-cols-2 gap-2 2xl:max-w-[96rem] xl:max-w-[77rem] lg:max-w-[67rem] md:max-w-[48rem] sm:max-w-[38rem] max-w-[19rem] mx-auto pb-16">
 	{#each icons as icon}
-		<div class="w-36 h-36 border rounded-xl border-gray-700 bg-gray-800 mx-auto" />
+		{#if icon.name.toLowerCase().includes(search.toLowerCase())}
+			<div
+				class="w-36 h-36 border rounded-xl border-gray-700 bg-gray-800 mx-auto hover:border-orange-400 btn hover:-mt-1 w-">
+				<div class="flex h-full">
+					<div class="m-auto">
+						<div
+							class="mx-auto"
+							class:w-3={selectedSize == '12'}
+							class:h-3={selectedSize == '12'}
+							class:w-4={selectedSize == '16'}
+							class:h-4={selectedSize == '16'}
+							class:w-6={selectedSize == '24'}
+							class:h-6={selectedSize == '24'}
+							class:w-8={selectedSize == '32'}
+							class:h-8={selectedSize == '32'}
+							class:w-11={selectedSize == '44'}
+							class:h-11={selectedSize == '44'}
+							class:w-16={selectedSize == '64'}
+							class:h-16={selectedSize == '64'}
+							class:w-20={selectedSize == '80'}
+							class:h-20={selectedSize == '80'}
+							style={`background-color: ${color};`}>
+							&nbsp;
+						</div>
+						<div class="text-center text-sm text-gray-400 mt-2">{icon.name}</div>
+					</div>
+				</div>
+			</div>
+		{/if}
 	{/each}
 </div>
 
