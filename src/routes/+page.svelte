@@ -56,8 +56,8 @@
 				href="https://www.npmjs.com/package/iconsax-svelte">Svelte</a>
 		</div>
 
-		<div class="p-10 flex">
-			<div class="flex mx-auto">
+		<div class="p-10 flex text-center">
+			<div class="flex gap-2 flex-col md:flex-row mx-auto">
 				<!-- Search -->
 				<div class="flex px-3 py-1 rounded-xl bg-gray-800">
 					<div class="bg-white w-5 h-5 ml-0 mr-2 my-2" />
@@ -68,7 +68,7 @@
 						class="bg-gray-800 outline-none" />
 				</div>
 				<!-- Size -->
-				<div class="mx-1 relative">
+				<div class="relative">
 					<div
 						class="px-3 py-3 rounded-xl bg-gray-800 btn"
 						on:click={() => (showSelectSize = !showSelectSize)}>
@@ -90,7 +90,7 @@
 					</div>
 				</div>
 				<!-- Variant -->
-				<div class="mx-1 relative">
+				<div class="relative">
 					<div
 						class="px-3 py-3 rounded-xl bg-gray-800 btn"
 						on:click={() => (showSelectVariant = !showSelectVariant)}>
