@@ -35,7 +35,7 @@
 		<div>
 			Made by <a class="underline text-orange-400" href="https://github.com/mashanz">mashanz</a>
 			inspired by
-			<a class="underline text-orange-400" href="iconsax-react.pages.dev">Iconsax React</a>
+			<a class="underline text-orange-400" href="https://iconsax-react.pages.dev">Iconsax React</a>
 		</div>
 	</header>
 
@@ -169,7 +169,7 @@
 	<div
 		in:fly={{ y: -100, duration: 250 }}
 		out:fade
-		class="absolute bottom-0 right-10 w-96 border border-gray-700 rounded-t-xl mx-auto p-2 text-white bg-gray-900">
+		class="absolute bottom-0 mx-auto md:right-10 w-full md:w-96 border border-gray-700 rounded-t-xl p-2 text-white bg-gray-900">
 		<div class="flex p-2">
 			<div class="font-bold">{selectedName}</div>
 			<div class="flex-grow" />
