@@ -182,17 +182,17 @@
 			</div>
 			<div>
 				&nbsp;&nbsp; <span class="text-green-500">size</span>=<span class="text-blue-500">
-					"24"
+					"{selectedSize}"
 				</span>
 			</div>
 			<div>
 				&nbsp;&nbsp; <span class="text-green-500">color</span>=<span class="text-blue-500">
-					"#fff"
+					"{color}"
 				</span>
 			</div>
 			<div>
 				&nbsp;&nbsp; <span class="text-green-500">variant</span>=<span class="text-blue-500">
-					"Linear"
+					"{selectedVariant}"
 				</span>
 			</div>
 			<div class="text-gray-600">/&gt;</div>
