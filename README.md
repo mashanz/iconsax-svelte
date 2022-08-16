@@ -14,7 +14,7 @@ yarn add iconsax-svelte
 
 ```svelte
 <script>
-  import { Add } from "iconsax-svelte";
+	import { Add } from 'iconsax-svelte';
 </script>
 
 <Add size="25" color="#fff" variant="Bold" />
