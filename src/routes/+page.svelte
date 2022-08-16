@@ -2,8 +2,11 @@
 	let search = '';
 	let color = '#fb923c';
 	const size = [12, 16, 24, 32, 44, 60, 80];
-
 	const variant = ['Linear', 'Outline', 'Bold', 'Bulk', 'Broken', 'TwoTone'];
+	const icons = [
+		1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 1, 4, 1, 4, 1, 2, 3, 2, 4, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+		2, 2, 2, 2, 2, 2, 22, 2, 2, 2
+	];
 
 	let showSelectSize = true;
 	let showSelectVariant = true;
@@ -26,7 +29,7 @@
 		class="text-center px-5 py-3 border-2 border-orange-400 rounded-full mx-1"
 		href="https://github.com/mashanz/iconsax-svelte">Get Started 🚀</a>
 
-    <a
+	<a
 		target="_blank"
 		class="text-center px-5 py-3 border-2 border-gray-700 rounded-full mx-1"
 		href="https://www.npmjs.com/package/iconsax-svelte">Svelte</a>
@@ -96,6 +99,13 @@
 				class="bg-gray-800 outline-none m-auto btn" />
 		</div>
 	</div>
+</div>
+
+<div
+	class="grid 2xl:grid-cols-10 xl:grid-cols-8 lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 grid-cols-2 gap-2 2xl:max-w-[96rem] xl:max-w-[77rem] lg:max-w-[67rem] md:max-w-[48rem] sm:max-w-[38rem] max-w-[19rem] mx-auto pb-16">
+	{#each icons as icon}
+		<div class="w-36 h-36 border rounded-xl border-gray-700 bg-gray-800 mx-auto" />
+	{/each}
 </div>
 
 <style type="postcss">
