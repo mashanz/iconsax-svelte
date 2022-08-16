@@ -21,7 +21,7 @@
 </svelte:head>
 
 <main class="h-screen w-full bg-gray-900 text-white overflow-auto relative">
-	<header class="text-xs flex p-10">
+	<header class="text-xs flex p-10 max-w-7xl w-full m-auto">
 		<div>
 			&copy; Iconsax | <a class=" underline text-orange-400" href="https://iconsax.io">
 				official website
@@ -39,7 +39,7 @@
 		</div>
 	</header>
 
-	<section class="h-screen absolute mx-auto w-full top-0">
+	<section class="h-screen absolute mx-auto w-full top-20">
 		<h1 class="text-center text-6xl px-10 pt-28 pb-14">
 			<span class="text-green-500 font-bold">ICONSAX</span> for
 			<span class="text-orange-400 font-bold">SVELTE</span>

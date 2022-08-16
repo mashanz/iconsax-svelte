@@ -1,5 +1,7 @@
 # Iconsax Svelte
 
+![iconsax-svelte](./iconsax-svelte.png)
+
 > &copy; Iconsax [official website](https://iconsax.io) [github page](https://github.com/lusaxweb/iconsax) | This repository is inspired by [iconsax-react](https://iconsax-react.pages.dev/)
 
 ## Preview
