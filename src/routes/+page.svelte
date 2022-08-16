@@ -13,6 +13,7 @@
 	$: color = '#fb923c';
 
 	import { icons } from '../icons';
+	import { fade, fly } from 'svelte/transition';
 </script>
 
 <svelte:head>
@@ -74,7 +75,7 @@
 						size: {selectedSize}
 					</div>
 					<div
-						class="text-center border-2 border-orange-400 rounded-xl absolute w-full mt-2 py-2"
+						class="text-center border-2 border-orange-400 rounded-xl absolute w-full mt-2 py-2 bg-gray-900"
 						class:hidden={showSelectSize}>
 						{#each size as s}
 							<div
@@ -96,7 +97,7 @@
 						Variant: {selectedVariant}
 					</div>
 					<div
-						class="text-center border-2 border-orange-400 rounded-xl absolute w-full mt-2 py-2"
+						class="text-center border-2 border-orange-400 rounded-xl absolute w-full mt-2 py-2 bg-gray-900"
 						class:hidden={showSelectVariant}>
 						{#each variant as v}
 							<div
@@ -126,6 +127,8 @@
 			{#each icons as icon}
 				{#if icon.name.toLowerCase().includes(search.toLowerCase())}
 					<button
+						in:fly={{ y: -100 }}
+						out:fly={{ y: -100 }}
 						on:click={() => {
 							showIconDetail = true;
 							selectedName = icon.name;
@@ -162,15 +165,40 @@
 	</section>
 </main>
 
-<div
-	class="absolute bottom-0 right-10 w-96 border rounded-t-xl mx-auto p-2 text-white"
-	class:hidden={!showIconDetail}>
-	<div class="flex">
-		<div class="font-bold">{selectedName}</div>
-		<div class="flex-grow" />
-		<div class="btn" on:click={() => (showIconDetail = false)}>&#x2715;</div>
+{#if showIconDetail}
+	<div
+		in:fly={{ y: -100, duration: 250 }}
+		out:fade
+		class="absolute bottom-0 right-10 w-96 border border-gray-700 rounded-t-xl mx-auto p-2 text-white bg-gray-900">
+		<div class="flex p-2">
+			<div class="font-bold">{selectedName}</div>
+			<div class="flex-grow" />
+			<div class="btn" on:click={() => (showIconDetail = false)}>&#x2715;</div>
+		</div>
+
+		<div class="bg-gray-800 rounded p-2 border-gray-700 border-2 font-mono text-sm mt-2">
+			<div class="text-gray-600">
+				&lt;<span class="text-orange-400 font-bold">{selectedName}</span>
+			</div>
+			<div>
+				&nbsp;&nbsp; <span class="text-green-500">size</span>=<span class="text-blue-500">
+					"24"
+				</span>
+			</div>
+			<div>
+				&nbsp;&nbsp; <span class="text-green-500">color</span>=<span class="text-blue-500">
+					"#fff"
+				</span>
+			</div>
+			<div>
+				&nbsp;&nbsp; <span class="text-green-500">variant</span>=<span class="text-blue-500">
+					"Linear"
+				</span>
+			</div>
+			<div class="text-gray-600">/&gt;</div>
+		</div>
 	</div>
-</div>
+{/if}
 
 <style type="postcss">
 	.btn {
