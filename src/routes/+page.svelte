@@ -189,9 +189,3 @@
 		</div>
 	</div>
 {/if}
-
-<style type="postcss">
-	.btn {
-		cursor: pointer;
-	}
-</style>
