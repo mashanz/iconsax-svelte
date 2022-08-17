@@ -1,6 +1,6 @@
 {
 	"name": "iconsax-svelte",
-	"version": "0.0.1-alpha.1",
+	"version": "0.0.1-alpha.3",
 	"description": "Iconsax Svelte Supports",
 	"repository": {
 		"type": "git",
@@ -18,6 +18,10 @@
 		"url": "https://github.com/mashanz/iconsax-svelte/issues"
 	},
 	"homepage": "https://github.com/mashanz/iconsax-svelte#readme",
+	"main": "index.js",
+	"bin": {
+		"iconsax-svelte": "index.js"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
