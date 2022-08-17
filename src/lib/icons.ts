@@ -4,11 +4,12 @@ import I3DRotate from '$lib/I3DRotate.svelte';
 export const icons = [
 	{
 		icon: I3DCubeScan,
-		name: 'I3DCubeScan'
+		name: 'I3DCubeScan',
+		category: 'Delivery'
 	},
 	{
 		icon: I3DRotate,
 		name: 'I3DRotate',
-		category: ''
+		category: 'Delivery'
 	}
 ];
