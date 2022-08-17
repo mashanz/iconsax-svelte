@@ -12,7 +12,7 @@
 	$: selectedVariant = 'Linear';
 	$: color = '#fb923c';
 
-	import { icons } from '../icons';
+	import { icons } from '$lib/icons';
 	import { fade, fly } from 'svelte/transition';
 </script>
 
@@ -136,24 +136,14 @@
 						class="w-36 h-36 border rounded-xl border-gray-700 bg-gray-800 mx-auto hover:border-orange-400 btn hover:-mt-1 w-">
 						<div class="flex h-full">
 							<div class="m-auto">
-								<div
-									class="mx-auto"
-									class:w-3={selectedSize == '12'}
-									class:h-3={selectedSize == '12'}
-									class:w-4={selectedSize == '16'}
-									class:h-4={selectedSize == '16'}
-									class:w-6={selectedSize == '24'}
-									class:h-6={selectedSize == '24'}
-									class:w-8={selectedSize == '32'}
-									class:h-8={selectedSize == '32'}
-									class:w-11={selectedSize == '44'}
-									class:h-11={selectedSize == '44'}
-									class:w-16={selectedSize == '64'}
-									class:h-16={selectedSize == '64'}
-									class:w-20={selectedSize == '80'}
-									class:h-20={selectedSize == '80'}
-									style={`background-color: ${color};`}>
-									&nbsp;
+								<div class="flex">
+									<div class="mx-auto">
+										<svelte:component
+											this={icon.icon}
+											size={selectedSize}
+											variant={selectedVariant}
+											{color} />
+									</div>
 								</div>
 								<div class="text-center text-sm text-gray-400 mt-2">{icon.name}</div>
 							</div>
