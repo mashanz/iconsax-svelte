@@ -1,3 +1,5 @@
+> STATUS: 6/896 Icons
+
 # Iconsax Svelte
 
 ![iconsax-svelte](./iconsax-svelte.png)
