@@ -1,4 +1,4 @@
-> STATUS: 6/896 Icons
+> **STATUS**:<br>**11/896** Icons<br/> **66/5376** Iconsa Variant
 
 # Iconsax Svelte
 
