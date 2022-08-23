@@ -4,6 +4,11 @@ import I3DSquare from '$lib/I3DSquare.svelte';
 import I3DCube from '$lib/I3DCube.svelte';
 import I3Square from '$lib/I3Square.svelte';
 import I24Support from '$lib/I24Support.svelte';
+import Activity from '$lib/Activity.svelte';
+import AddCircle from '$lib/AddCircle.svelte';
+import AddSquare from '$lib/AddSquare.svelte';
+import Add from '$lib/Add.svelte';
+import AddItem from '$lib/AddItem.svelte';
 
 export const icons = [
 	{
@@ -34,6 +39,31 @@ export const icons = [
 	{
 		icon: I24Support,
 		name: 'I24Support',
+		category: ''
+	},
+	{
+		icon: Activity,
+		name: 'Activity',
+		category: ''
+	},
+	{
+		icon: AddCircle,
+		name: 'AddCircle',
+		category: ''
+	},
+	{
+		icon: AddSquare,
+		name: 'AddSquare',
+		category: ''
+	},
+	{
+		icon: Add,
+		name: 'Add',
+		category: ''
+	},
+	{
+		icon: AddItem,
+		name: 'AddItem',
 		category: ''
 	}
 ];
