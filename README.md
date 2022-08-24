@@ -1,4 +1,4 @@
-> **STATUS**:<br>**11/896** Icons<br/> **66/5376** Iconsa Variant
+> **STATUS**: still messy because auto generate from svg list
 
 # Iconsax Svelte
 

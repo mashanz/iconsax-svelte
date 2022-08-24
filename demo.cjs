@@ -19,10 +19,11 @@ function read_list_files(dir) {
 				imp = imp + `import ${file.replace('.svelte', '')} from "$lib/${file}";\n`;
 				array_icon =
 					array_icon +
-					`{icon: ${file.replace('.svelte', '')}, name: '${file.replace(
-						'.svelte',
-						''
-					)}', category: ''},`;
+					`{
+    icon: ${file.replace('.svelte', '')}, 
+    name: '${file.replace('.svelte', '')}', 
+    category: ''
+},\n`;
 			}
 		});
 		let full_file_name = `src/lib/icons.ts`;
