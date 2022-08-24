@@ -1,14 +1,14 @@
-import I3DCubeScan from '$lib/I3DCubeScan.svelte';
-import I3DRotate from '$lib/I3DRotate.svelte';
-import I3DSquare from '$lib/I3DSquare.svelte';
-import I3DCube from '$lib/I3DCube.svelte';
-import I3Square from '$lib/I3Square.svelte';
+import I3dCubeScan from '$lib/I3dCubeScan.svelte';
+import I3dRotate from '$lib/I3dRotate.svelte';
+import I3dSquare from '$lib/I3dSquare.svelte';
+import I3dcube from '$lib/I3dcube.svelte';
+import I3dSquare from '$lib/I3dSquare.svelte';
 import I24Support from '$lib/I24Support.svelte';
 import Activity from '$lib/Activity.svelte';
 import AddCircle from '$lib/AddCircle.svelte';
 import AddSquare from '$lib/AddSquare.svelte';
 import Add from '$lib/Add.svelte';
-import AddItem from '$lib/AddItem.svelte';
+import AddItem from '$lib/Additem.svelte';
 
 export const icons = [
 	{
