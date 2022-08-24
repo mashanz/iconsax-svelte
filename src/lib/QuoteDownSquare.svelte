@@ -5,15 +5,15 @@
 </script>
 
 {#if variant === 'Linear'}
-	<!-- Linear -->
+	<!-- linear -->
 {:else if variant === 'Outline'}
-	<!-- Outline -->
+	<!-- outline -->
 {:else if variant === 'Bold'}
-	<!-- Bold -->
+	<!-- bold -->
 {:else if variant === 'Bulk'}
-	<!-- Bulk -->
+	<!-- bulk -->
 {:else if variant === 'Broken'}
-	<!-- Broken -->
+	<!-- broken -->
 {:else if variant === 'TwoTone'}
-	<!-- TwoTone -->
+	<!-- twotone -->
 {/if}

@@ -11,17 +11,17 @@ let base_content = `<script>
 </script>
 
 {#if variant === 'Linear'}
-	<!-- Linear -->
+	<!-- linear -->
 {:else if variant === 'Outline'}
-	<!-- Outline -->
+	<!-- outline -->
 {:else if variant === 'Bold'}
-	<!-- Bold -->
+	<!-- bold -->
 {:else if variant === 'Bulk'}
-	<!-- Bulk -->
+	<!-- bulk -->
 {:else if variant === 'Broken'}
-	<!-- Broken -->
+	<!-- broken -->
 {:else if variant === 'TwoTone'}
-	<!-- TwoTone -->
+	<!-- twotone -->
 {/if}
 `;
 
@@ -37,6 +37,11 @@ function read_list_files(dir) {
 		files.forEach(function (file) {
 			// Do whatever you want to do with the file
 			if (file !== '.DS_Store') {
+                // get icon type
+                let icon_type = dir.replace("Svg/All/", "")
+                // get icon contents
+                let icon_svg = fs.readFileSync(`${dir}/${file}`,'utf8');
+
 				let file_name = file
 					.replace('.svg', '')
 					.replace('-', ' ')
@@ -53,19 +58,36 @@ function read_list_files(dir) {
                 if (!isNaN(first_char)) {
                     file_name = "I" + file_name;
                 }
-				fs.writeFile(`./src/lib/${file_name}.svelte`, base_content, function (error) {
-					if (error) throw error;
-				});
+
+                // Current Content
+                let full_file_name = `src/lib/${file_name}.svelte`
+
+                // Use base content if file empty
+                try {
+                    let content = fs.readFileSync(full_file_name,'utf8');
+                    if (content == "") content = base_content;
+
+                    // replace tag with icons
+                    content.replace(`<!-- ${icon_type} -->`, icon_svg)
+
+                    // write updates
+                    fs.writeFile(full_file_name, content, function (error) {
+                        if (error) throw error;
+                    });
+                } catch {
+                    // write updates
+                    fs.writeFile(full_file_name, base_content, function (error) {
+                        if (error) throw error;
+                    });
+                }
 			}
 		});
 	});
 }
 
 read_list_files('Svg/All/linear');
-// read_list_files('Svg/All/outline');
-// read_list_files('Svg/All/bold');
-// read_list_files('Svg/All/bulk');
-// read_list_files('Svg/All/broken');
-// read_list_files('Svg/All/twotone');
-// Creating a function which takes a file as input
-// const readFileLines = filename => fs.readFileSync(filename).toString('UTF8');
+read_list_files('Svg/All/outline'); // add 16 items
+read_list_files('Svg/All/bold'); // add 15 items -> 1
+read_list_files('Svg/All/bulk'); // add 11 items -> 0
+read_list_files('Svg/All/broken'); // add 18 items -> 3
+read_list_files('Svg/All/twotone'); // add 17 items -> 5
