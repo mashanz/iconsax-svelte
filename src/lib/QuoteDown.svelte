@@ -86,7 +86,12 @@
 			fill={`${color}`} />
 	</svg>
 {:else if variant === 'Broken'}
-	<svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg
+		width={`${size}`}
+		height={`${size}`}
+		viewBox="-1 0 24 20"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg">
 		<path
 			d="M12.63 3.85992C12.63 2.43992 13.68 1.27997 15.21 1.27997L18.42 1.27997C19.84 1.27997 21 2.43992 21 3.85992L21 9.65991"
 			stroke={`${color}`}

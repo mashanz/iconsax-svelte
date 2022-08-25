@@ -77,7 +77,12 @@
 			fill={`${color}`} />
 	</svg>
 {:else if variant === 'Bulk'}
-	<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg
+		width={`${size}`}
+		height={`${size}`}
+		viewBox="0 0 20 21"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg">
 		<path
 			opacity="0.4"
 			d="M14.19 0.970215H5.81C2.17 0.970215 0 3.14022 0 6.78022V15.1602C0 18.8002 2.17 20.9702 5.81 20.9702H14.19C17.83 20.9702 20 18.8002 20 15.1602V6.78022C20 3.14022 17.83 0.970215 14.19 0.970215Z"

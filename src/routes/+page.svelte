@@ -13,6 +13,7 @@
 	$: color = '#fb923c';
 
 	import { icons } from '$lib/icons';
+	import SearchNormal1 from '$lib/SearchNormal1.svelte';
 </script>
 
 <svelte:head>
@@ -59,7 +60,10 @@
 			<div class="flex gap-2 flex-col md:flex-row mx-auto">
 				<!-- Search -->
 				<div class="flex px-3 py-1 rounded-xl bg-gray-800">
-					<div class="bg-white w-5 h-5 ml-0 mr-2 my-2" />
+					<div class="w-5 h-5 ml-0 mr-2 my-2">
+						<SearchNormal1 size={20} variant="Linear" color="#fb923c" />
+					</div>
+
 					<input
 						type="text"
 						bind:value={search}
@@ -78,7 +82,7 @@
 						class:hidden={showSelectSize}>
 						{#each size as s}
 							<div
-								class="p-1 text-sm"
+								class="p-1 text-sm btn"
 								on:click={() => {
 									selectedSize = `${s}`;
 									showSelectSize = !showSelectSize;
@@ -100,7 +104,7 @@
 						class:hidden={showSelectVariant}>
 						{#each variant as v}
 							<div
-								class="p-1 text-sm"
+								class="p-1 text-sm btn"
 								on:click={() => {
 									selectedVariant = `${v}`;
 									showSelectVariant = !showSelectVariant;
