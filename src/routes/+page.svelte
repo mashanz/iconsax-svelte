@@ -13,7 +13,6 @@
 	$: color = '#fb923c';
 
 	import { icons } from '$lib/icons';
-	import { fade, fly } from 'svelte/transition';
 </script>
 
 <svelte:head>
@@ -125,10 +124,8 @@
 		<div
 			class="grid 2xl:grid-cols-10 xl:grid-cols-8 lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 grid-cols-2 gap-2 2xl:max-w-[96rem] xl:max-w-[77rem] lg:max-w-[67rem] md:max-w-[48rem] sm:max-w-[38rem] max-w-[19rem] mx-auto pb-16">
 			{#each icons as icon}
-				{#if icon.name.toLowerCase().includes(search.toLowerCase())}
+				{#if icon.name.toLowerCase().includes(search)}
 					<button
-						in:fly={{ y: -100 }}
-						out:fly={{ y: -100 }}
 						on:click={() => {
 							showIconDetail = true;
 							selectedName = icon.name;
@@ -157,8 +154,6 @@
 
 {#if showIconDetail}
 	<div
-		in:fly={{ y: -100, duration: 250 }}
-		out:fade
 		class="absolute bottom-0 mx-auto md:right-10 w-full md:w-96 border border-gray-700 rounded-t-xl p-2 text-white bg-gray-900">
 		<div class="flex p-2">
 			<div class="font-bold">{selectedName}</div>
