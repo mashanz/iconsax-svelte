@@ -5,7 +5,12 @@
 </script>
 
 {#if variant === 'Linear'}
-	<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg
+		width={`${size}`}
+		height={`${size}`}
+		viewBox="0 0 22 22"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg">
 		<path
 			d="M13.6 11.5799V14.3099C13.6 16.5899 12.69 17.4999 10.41 17.4999H7.69C5.42 17.4999 4.5 16.5899 4.5 14.3099V11.5799C4.5 9.3099 5.41 8.3999 7.69 8.3999H10.42C12.69 8.3999 13.6 9.3099 13.6 11.5799Z"
 			stroke={`${color}`}
@@ -126,7 +131,12 @@
 			stroke-linejoin="round" />
 	</svg>
 {:else if variant === 'TwoTone'}
-	<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg
+		width={`${size}`}
+		height={`${size}`}
+		viewBox="0 0 22 22"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg">
 		<path
 			d="M13.6 11.5799V14.3099C13.6 16.5899 12.69 17.4999 10.41 17.4999H7.69C5.42 17.4999 4.5 16.5899 4.5 14.3099V11.5799C4.5 9.3099 5.41 8.3999 7.69 8.3999H10.42C12.69 8.3999 13.6 9.3099 13.6 11.5799Z"
 			stroke={`${color}`}

@@ -127,9 +127,7 @@ import Brush4 from '$lib/Brush4.svelte';
 import Bubble from '$lib/Bubble.svelte';
 import Bucket from '$lib/Bucket.svelte';
 import BucketCircle from '$lib/BucketCircle.svelte';
-import BucketCircle1 from '$lib/BucketCircle1.svelte';
 import BucketSquare from '$lib/BucketSquare.svelte';
-import BucketSquare1 from '$lib/BucketSquare1.svelte';
 import Building from '$lib/Building.svelte';
 import Building3 from '$lib/Building3.svelte';
 import Building4 from '$lib/Building4.svelte';
@@ -342,7 +340,6 @@ import Flash from '$lib/Flash.svelte';
 import Flash1 from '$lib/Flash1.svelte';
 import FlashCircle from '$lib/FlashCircle.svelte';
 import FlashCircle1 from '$lib/FlashCircle1.svelte';
-import FlashCircle2 from '$lib/FlashCircle2.svelte';
 import FlashSlash from '$lib/FlashSlash.svelte';
 import Folder from '$lib/Folder.svelte';
 import Folder2 from '$lib/Folder2.svelte';
@@ -628,7 +625,6 @@ import NotificationCircle from '$lib/NotificationCircle.svelte';
 import NotificationFavorite from '$lib/NotificationFavorite.svelte';
 import NotificationStatus from '$lib/NotificationStatus.svelte';
 import OmegaCircle from '$lib/OmegaCircle.svelte';
-import OmegaCircle1 from '$lib/OmegaCircle1.svelte';
 import OmegaSquare from '$lib/OmegaSquare.svelte';
 import OmegaSquare1 from '$lib/OmegaSquare1.svelte';
 import Paintbucket from '$lib/Paintbucket.svelte';
@@ -1589,18 +1585,8 @@ export const icons = [
 		category: ''
 	},
 	{
-		icon: BucketCircle1,
-		name: 'BucketCircle1',
-		category: ''
-	},
-	{
 		icon: BucketSquare,
 		name: 'BucketSquare',
-		category: ''
-	},
-	{
-		icon: BucketSquare1,
-		name: 'BucketSquare1',
 		category: ''
 	},
 	{
@@ -2661,11 +2647,6 @@ export const icons = [
 	{
 		icon: FlashCircle1,
 		name: 'FlashCircle1',
-		category: ''
-	},
-	{
-		icon: FlashCircle2,
-		name: 'FlashCircle2',
 		category: ''
 	},
 	{
@@ -4091,11 +4072,6 @@ export const icons = [
 	{
 		icon: OmegaCircle,
 		name: 'OmegaCircle',
-		category: ''
-	},
-	{
-		icon: OmegaCircle1,
-		name: 'OmegaCircle1',
 		category: ''
 	},
 	{

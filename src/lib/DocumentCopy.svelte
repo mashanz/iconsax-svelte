@@ -160,7 +160,12 @@
 			stroke-linejoin="round" />
 	</svg>
 {:else if variant === 'TwoTone'}
-	<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg
+		width={`${size}`}
+		height={`${size}`}
+		viewBox="0 0 22 22"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg">
 		<path
 			opacity="0.4"
 			d="M16 12.4V15.4C16 19.4 14.4 21 10.4 21H6.6C2.6 21 1 19.4 1 15.4V11.6C1 7.6 2.6 6 6.6 6H9.6"
