@@ -23,13 +23,9 @@
 <main class="h-screen w-full bg-gray-900 text-white overflow-auto relative">
 	<header class="text-xs flex p-10 max-w-7xl w-full m-auto">
 		<div>
-			&copy; Iconsax | <a class=" underline text-orange-400" href="https://iconsax.io">
-				official website
-			</a>
+			&copy; Iconsax | <a class=" underline text-orange-400" href="https://iconsax.io"> official website </a>
 			|
-			<a class="underline text-orange-400" href="https://github.com/lusaxweb/iconsax">
-				github page
-			</a>
+			<a class="underline text-orange-400" href="https://github.com/lusaxweb/iconsax"> github page </a>
 		</div>
 		<div class="flex-grow" />
 		<div>
@@ -45,15 +41,9 @@
 			<span class="text-orange-400 font-bold">SVELTE</span>
 		</h1>
 		<div class="w-full text-center pb-32">
-			<a
-				target="_blank"
-				class="text-center px-5 py-3 border-2 border-orange-400 rounded-full mx-1"
-				href="https://github.com/mashanz/iconsax-svelte">Get Started 🚀</a>
+			<a target="_blank" class="text-center px-5 py-3 border-2 border-orange-400 rounded-full mx-1" href="https://github.com/mashanz/iconsax-svelte">Get Started 🚀</a>
 
-			<a
-				target="_blank"
-				class="text-center px-5 py-3 border-2 border-gray-700 rounded-full mx-1"
-				href="https://www.npmjs.com/package/iconsax-svelte">Svelte</a>
+			<a target="_blank" class="text-center px-5 py-3 border-2 border-gray-700 rounded-full mx-1" href="https://www.npmjs.com/package/iconsax-svelte">Svelte</a>
 		</div>
 
 		<div class="p-10 flex text-center">
@@ -64,22 +54,14 @@
 						<SearchNormal1 size={20} variant="Linear" color="#fb923c" />
 					</div>
 
-					<input
-						type="text"
-						bind:value={search}
-						placeholder="search icons..."
-						class="bg-gray-800 outline-none" />
+					<input type="text" bind:value={search} placeholder="search icons..." class="bg-gray-800 outline-none" />
 				</div>
 				<!-- Size -->
 				<div class="relative">
-					<div
-						class="px-3 py-3 rounded-xl bg-gray-800 btn"
-						on:click={() => (showSelectSize = !showSelectSize)}>
+					<div class="px-3 py-3 rounded-xl bg-gray-800 btn" on:click={() => (showSelectSize = !showSelectSize)}>
 						size: {selectedSize}
 					</div>
-					<div
-						class="text-center border-2 border-orange-400 rounded-xl absolute w-full mt-2 py-2 bg-gray-900"
-						class:hidden={showSelectSize}>
+					<div class="text-center border-2 border-orange-400 rounded-xl absolute w-full mt-2 py-2 bg-gray-900" class:hidden={showSelectSize}>
 						{#each size as s}
 							<div
 								class="p-1 text-sm btn"
@@ -94,14 +76,10 @@
 				</div>
 				<!-- Variant -->
 				<div class="relative">
-					<div
-						class="px-3 py-3 rounded-xl bg-gray-800 btn"
-						on:click={() => (showSelectVariant = !showSelectVariant)}>
+					<div class="px-3 py-3 rounded-xl bg-gray-800 btn" on:click={() => (showSelectVariant = !showSelectVariant)}>
 						Variant: {selectedVariant}
 					</div>
-					<div
-						class="text-center border-2 border-orange-400 rounded-xl absolute w-full mt-2 py-2 bg-gray-900"
-						class:hidden={showSelectVariant}>
+					<div class="text-center border-2 border-orange-400 rounded-xl absolute w-full mt-2 py-2 bg-gray-900" class:hidden={showSelectVariant}>
 						{#each variant as v}
 							<div
 								class="p-1 text-sm btn"
@@ -116,17 +94,12 @@
 				</div>
 				<!-- Color -->
 				<div class="flex px-3 py-1 rounded-xl bg-gray-800">
-					<input
-						type="color"
-						bind:value={color}
-						placeholder="search icons..."
-						class="bg-gray-800 outline-none m-auto btn" />
+					<input type="color" bind:value={color} placeholder="search icons..." class="bg-gray-800 outline-none m-auto btn" />
 				</div>
 			</div>
 		</div>
 
-		<div
-			class="grid 2xl:grid-cols-10 xl:grid-cols-8 lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 grid-cols-2 gap-2 2xl:max-w-[96rem] xl:max-w-[77rem] lg:max-w-[67rem] md:max-w-[48rem] sm:max-w-[38rem] max-w-[19rem] mx-auto pb-16">
+		<div class="grid 2xl:grid-cols-10 xl:grid-cols-8 lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 grid-cols-2 gap-2 2xl:max-w-[96rem] xl:max-w-[77rem] lg:max-w-[67rem] md:max-w-[48rem] sm:max-w-[38rem] max-w-[19rem] mx-auto pb-16">
 			{#each icons as icon}
 				{#if icon.name.toLowerCase().includes(search.toLowerCase())}
 					<button
@@ -139,11 +112,7 @@
 							<div class="m-auto">
 								<div class="flex">
 									<div class="mx-auto">
-										<svelte:component
-											this={icon.icon}
-											size={selectedSize}
-											variant={selectedVariant}
-											{color} />
+										<svelte:component this={icon.icon} size={selectedSize} variant={selectedVariant} {color} />
 									</div>
 								</div>
 								<div class="text-center text-sm text-gray-400 mt-2">{icon.name}</div>
@@ -157,8 +126,7 @@
 </main>
 
 {#if showIconDetail}
-	<div
-		class="absolute bottom-0 mx-auto md:right-10 w-full md:w-96 border border-gray-700 rounded-t-xl p-2 text-white bg-gray-900">
+	<div class="absolute bottom-0 mx-auto md:right-10 w-full md:w-96 border border-gray-700 rounded-t-xl p-2 text-white bg-gray-900">
 		<div class="flex p-2">
 			<div class="font-bold">{selectedName}</div>
 			<div class="flex-grow" />
