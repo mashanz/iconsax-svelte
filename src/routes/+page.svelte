@@ -124,7 +124,7 @@
 		<div
 			class="grid 2xl:grid-cols-10 xl:grid-cols-8 lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 grid-cols-2 gap-2 2xl:max-w-[96rem] xl:max-w-[77rem] lg:max-w-[67rem] md:max-w-[48rem] sm:max-w-[38rem] max-w-[19rem] mx-auto pb-16">
 			{#each icons as icon}
-				{#if icon.name.toLowerCase().includes(search)}
+				{#if icon.name.toLowerCase().includes(search.toLowerCase())}
 					<button
 						on:click={() => {
 							showIconDetail = true;
