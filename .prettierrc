@@ -2,7 +2,7 @@
 	"useTabs": true,
 	"singleQuote": true,
 	"trailingComma": "none",
-	"printWidth": 1000,
+	"printWidth": 2000,
 	"bracketSameLine": true,
 	"svelteAllowShorthand": true
 }

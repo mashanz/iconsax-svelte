@@ -455,8 +455,6 @@ import I3dcube from '$lib/I3dcube.svelte';
 import I3square from '$lib/I3square.svelte';
 import Icon from '$lib/Icon.svelte';
 import Icon1 from '$lib/Icon1.svelte';
-import Icon2 from '$lib/Icon2.svelte';
-import Icon3 from '$lib/Icon3.svelte';
 import Image from '$lib/Image.svelte';
 import Import from '$lib/Import.svelte';
 import Import1 from '$lib/Import1.svelte';
@@ -3218,16 +3216,6 @@ export const icons = [
 	{
 		icon: Icon1,
 		name: 'Icon1',
-		category: ''
-	},
-	{
-		icon: Icon2,
-		name: 'Icon2',
-		category: ''
-	},
-	{
-		icon: Icon3,
-		name: 'Icon3',
 		category: ''
 	},
 	{
