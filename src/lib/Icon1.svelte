@@ -12,9 +12,7 @@
 	<!-- bold -->
 {:else if variant === 'Bulk'}
 	<!-- bulk -->
-{:else if variant === 'Broken'}
-	
-{:else if variant === 'TwoTone'}
+{:else if variant === 'Broken'}{:else if variant === 'TwoTone'}
 	<svg width={`${size}`} height={`${size}`} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M2.5 13.24V11.51C2.5 9.44001 4.18999 7.75 6.25999 7.75H17.74C19.81 7.75 21.5 9.44001 21.5 11.51V12.95H19.48C18.92 12.95 18.41 13.17 18.04 13.55C17.62 13.96 17.38 14.55 17.44 15.18C17.53 16.26 18.52 17.05 19.6 17.05H21.5V18.24C21.5 20.31 19.81 22 17.74 22H12.26" stroke={`${color}`} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 		<path opacity="0.4" d="M2.5 12.4098V7.83986C2.5 6.64986 3.23 5.58982 4.34 5.16982L12.28 2.16982C13.52 1.69982 14.85 2.61985 14.85 3.94985V7.74983" stroke={`${color}`} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
