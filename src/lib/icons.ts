@@ -46,7 +46,6 @@ import ArrowRight from '$lib/ArrowRight.svelte';
 import ArrowRight1 from '$lib/ArrowRight1.svelte';
 import ArrowRight2 from '$lib/ArrowRight2.svelte';
 import ArrowRight3 from '$lib/ArrowRight3.svelte';
-import ArrowRight4 from '$lib/ArrowRight4.svelte';
 import ArrowSquare from '$lib/ArrowSquare.svelte';
 import ArrowSquareDown from '$lib/ArrowSquareDown.svelte';
 import ArrowSquareLeft from '$lib/ArrowSquareLeft.svelte';
@@ -69,7 +68,6 @@ import Backward10Seconds from '$lib/Backward10Seconds.svelte';
 import Backward15Seconds from '$lib/Backward15Seconds.svelte';
 import Backward5Seconds from '$lib/Backward5Seconds.svelte';
 import BackwardItem from '$lib/BackwardItem.svelte';
-import BackwardItem1 from '$lib/BackwardItem1.svelte';
 import Bag from '$lib/Bag.svelte';
 import Bag2 from '$lib/Bag2.svelte';
 import BagCross from '$lib/BagCross.svelte';
@@ -87,7 +85,6 @@ import BatteryEmpty from '$lib/BatteryEmpty.svelte';
 import BatteryEmpty1 from '$lib/BatteryEmpty1.svelte';
 import BatteryFull from '$lib/BatteryFull.svelte';
 import Bezier from '$lib/Bezier.svelte';
-import Bezier1 from '$lib/Bezier1.svelte';
 import Bill from '$lib/Bill.svelte';
 import BitcoinCard from '$lib/BitcoinCard.svelte';
 import BitcoinConvert from '$lib/BitcoinConvert.svelte';
@@ -99,7 +96,6 @@ import Bluetooth2 from '$lib/Bluetooth2.svelte';
 import BluetoothCircle from '$lib/BluetoothCircle.svelte';
 import BluetoothRectangle from '$lib/BluetoothRectangle.svelte';
 import Blur from '$lib/Blur.svelte';
-import Blur1 from '$lib/Blur1.svelte';
 import Book from '$lib/Book.svelte';
 import Book1 from '$lib/Book1.svelte';
 import BookSaved from '$lib/BookSaved.svelte';
@@ -1180,11 +1176,6 @@ export const icons = [
 		category: ''
 	},
 	{
-		icon: ArrowRight4,
-		name: 'ArrowRight4',
-		category: ''
-	},
-	{
 		icon: ArrowSquare,
 		name: 'ArrowSquare',
 		category: ''
@@ -1295,11 +1286,6 @@ export const icons = [
 		category: ''
 	},
 	{
-		icon: BackwardItem1,
-		name: 'BackwardItem1',
-		category: ''
-	},
-	{
 		icon: Bag,
 		name: 'Bag',
 		category: ''
@@ -1385,11 +1371,6 @@ export const icons = [
 		category: ''
 	},
 	{
-		icon: Bezier1,
-		name: 'Bezier1',
-		category: ''
-	},
-	{
 		icon: Bill,
 		name: 'Bill',
 		category: ''
@@ -1442,11 +1423,6 @@ export const icons = [
 	{
 		icon: Blur,
 		name: 'Blur',
-		category: ''
-	},
-	{
-		icon: Blur1,
-		name: 'Blur1',
 		category: ''
 	},
 	{
