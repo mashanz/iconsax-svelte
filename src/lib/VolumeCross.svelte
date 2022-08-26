@@ -35,7 +35,7 @@
 		<path d="M21.9599 10.04L21.4199 10.58" stroke={`${color}`} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 	</svg>
 {:else if variant === 'TwoTone'}
-	<svg width={`${size}`} height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg width={`${size}`} height={`${size}`} viewBox="-3 -3 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M1 7.00077V11.0008C1 13.0008 2 14.0008 4 14.0008H5.43C5.8 14.0008 6.17 14.1108 6.49 14.3008L9.41 16.1308C11.93 17.7108 14 16.5608 14 13.5908V4.41077C14 1.43077 11.93 0.290766 9.41 1.87077L6.49 3.70077C6.17 3.89077 5.8 4.00077 5.43 4.00077H4C2 4.00077 1 5.00077 1 7.00077Z" stroke={`${color}`} stroke-width="1.5" />
 		<g opacity="0.4">
 			<path d="M20.9991 10.961L17.0391 7.00098" stroke={`${color}`} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />

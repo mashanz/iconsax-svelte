@@ -4,13 +4,7 @@
 	export let variant = 'Linear';
 </script>
 
-{#if variant === 'Linear'}
-	<svg width="18" height={`${size}`} viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M17 6V16C17 20 16 21 12 21H6C2 21 1 20 1 16V6C1 2 2 1 6 1H12C16 1 17 2 17 6Z" stroke={`${color}`} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-		<path d="M11 4.5H7" stroke={`${color}`} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-		<path d="M8.99995 18.1C9.85599 18.1 10.55 17.406 10.55 16.55C10.55 15.694 9.85599 15 8.99995 15C8.14391 15 7.44995 15.694 7.44995 16.55C7.44995 17.406 8.14391 18.1 8.99995 18.1Z" stroke={`${color}`} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-	</svg>
-{:else if variant === 'Outline'}
+{#if ['Linear', 'Outline'].includes(variant)}
 	<svg width={`${size}`} height={`${size}`} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M15 22.75H9C4.59 22.75 3.25 21.41 3.25 17V7C3.25 2.59 4.59 1.25 9 1.25H15C19.41 1.25 20.75 2.59 20.75 7V17C20.75 21.41 19.41 22.75 15 22.75ZM9 2.75C5.42 2.75 4.75 3.43 4.75 7V17C4.75 20.57 5.42 21.25 9 21.25H15C18.58 21.25 19.25 20.57 19.25 17V7C19.25 3.43 18.58 2.75 15 2.75H9Z" fill={`${color}`} />
 		<path d="M14 6.25H10C9.59 6.25 9.25 5.91 9.25 5.5C9.25 5.09 9.59 4.75 10 4.75H14C14.41 4.75 14.75 5.09 14.75 5.5C14.75 5.91 14.41 6.25 14 6.25Z" fill={`${color}`} />
@@ -33,7 +27,7 @@
 		<path d="M11.9992 19.1C12.8553 19.1 13.5492 18.406 13.5492 17.55C13.5492 16.694 12.8553 16 11.9992 16C11.1432 16 10.4492 16.694 10.4492 17.55C10.4492 18.406 11.1432 19.1 11.9992 19.1Z" stroke={`${color}`} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 	</svg>
 {:else if variant === 'TwoTone'}
-	<svg width="18" height={`${size}`} viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg width={`${size}`} height={`${size}`} viewBox="-3 -1 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M17 6V16C17 20 16 21 12 21H6C2 21 1 20 1 16V6C1 2 2 1 6 1H12C16 1 17 2 17 6Z" stroke={`${color}`} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 		<path opacity="0.4" d="M11 4.5H7" stroke={`${color}`} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 		<path opacity="0.4" d="M9.0002 18.1C9.85624 18.1 10.5502 17.406 10.5502 16.55C10.5502 15.694 9.85624 15 9.0002 15C8.14415 15 7.4502 15.694 7.4502 16.55C7.4502 17.406 8.14415 18.1 9.0002 18.1Z" stroke={`${color}`} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
