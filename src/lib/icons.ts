@@ -407,10 +407,6 @@ import Group from '$lib/Group.svelte';
 import Group1 from '$lib/Group1.svelte';
 import Group10 from '$lib/Group10.svelte';
 import Group11 from '$lib/Group11.svelte';
-import Group2 from '$lib/Group2.svelte';
-import Group3 from '$lib/Group3.svelte';
-import Group4 from '$lib/Group4.svelte';
-import Group5 from '$lib/Group5.svelte';
 import Group6 from '$lib/Group6.svelte';
 import Group7 from '$lib/Group7.svelte';
 import Group8 from '$lib/Group8.svelte';
@@ -2973,26 +2969,6 @@ export const icons = [
 	{
 		icon: Group11,
 		name: 'Group11',
-		category: ''
-	},
-	{
-		icon: Group2,
-		name: 'Group2',
-		category: ''
-	},
-	{
-		icon: Group3,
-		name: 'Group3',
-		category: ''
-	},
-	{
-		icon: Group4,
-		name: 'Group4',
-		category: ''
-	},
-	{
-		icon: Group5,
-		name: 'Group5',
 		category: ''
 	},
 	{
