@@ -407,8 +407,6 @@ import Group from '$lib/Group.svelte';
 import Group1 from '$lib/Group1.svelte';
 import Group10 from '$lib/Group10.svelte';
 import Group11 from '$lib/Group11.svelte';
-import Group6 from '$lib/Group6.svelte';
-import Group7 from '$lib/Group7.svelte';
 import Group8 from '$lib/Group8.svelte';
 import Group9 from '$lib/Group9.svelte';
 import Happyemoji from '$lib/Happyemoji.svelte';
@@ -2969,16 +2967,6 @@ export const icons = [
 	{
 		icon: Group11,
 		name: 'Group11',
-		category: ''
-	},
-	{
-		icon: Group6,
-		name: 'Group6',
-		category: ''
-	},
-	{
-		icon: Group7,
-		name: 'Group7',
 		category: ''
 	},
 	{
