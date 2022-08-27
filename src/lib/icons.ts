@@ -404,8 +404,6 @@ import GridEdit from '$lib/GridEdit.svelte';
 import GridEraser from '$lib/GridEraser.svelte';
 import GridLock from '$lib/GridLock.svelte';
 import Group from '$lib/Group.svelte';
-import Group1 from '$lib/Group1.svelte';
-import Group10 from '$lib/Group10.svelte';
 import Group11 from '$lib/Group11.svelte';
 import Group8 from '$lib/Group8.svelte';
 import Group9 from '$lib/Group9.svelte';
@@ -2952,16 +2950,6 @@ export const icons = [
 	{
 		icon: Group,
 		name: 'Group',
-		category: ''
-	},
-	{
-		icon: Group1,
-		name: 'Group1',
-		category: ''
-	},
-	{
-		icon: Group10,
-		name: 'Group10',
 		category: ''
 	},
 	{
