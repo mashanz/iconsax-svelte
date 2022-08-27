@@ -453,7 +453,6 @@ import I3dRotate from '$lib/I3dRotate.svelte';
 import I3dSquare from '$lib/I3dSquare.svelte';
 import I3dcube from '$lib/I3dcube.svelte';
 import I3square from '$lib/I3square.svelte';
-import Icon from '$lib/Icon.svelte';
 import Image from '$lib/Image.svelte';
 import Import from '$lib/Import.svelte';
 import Import1 from '$lib/Import1.svelte';
@@ -3204,11 +3203,6 @@ export const icons = [
 	{
 		icon: I3square,
 		name: 'I3square',
-		category: ''
-	},
-	{
-		icon: Icon,
-		name: 'Icon',
 		category: ''
 	},
 	{

@@ -4,12 +4,10 @@
 	export let variant = 'Linear';
 </script>
 
-{#if variant === 'Linear'}
+{#if ['Linear', 'Outline'].includes(variant)}
 	<svg width={`${size}`} height={`${size}`} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M12.61 2.21C12.25 1.93 11.75 1.93 11.39 2.21C9.49004 3.66 3.88003 8.39 3.91003 13.9C3.91003 18.36 7.54004 22 12.01 22C16.48 22 20.11 18.37 20.11 13.91C20.12 8.48 14.5 3.67 12.61 2.21Z" stroke={`${color}`} stroke-width="1.5" stroke-miterlimit="10" />
 	</svg>
-{:else if variant === 'Outline'}
-	<!-- outline -->
 {:else if variant === 'Bold'}
 	<svg width={`${size}`} height={`${size}`} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M16.5885 7.41L6.30849 17.69C5.82849 18.17 5.00849 18.06 4.71849 17.45C4.19849 16.38 3.89849 15.17 3.89849 13.9C3.87849 8.38 9.47849 3.66 11.3785 2.21C11.7485 1.93 12.2485 1.93 12.6085 2.21C13.4785 2.87 15.1085 4.24 16.6385 6.04C16.9785 6.44 16.9585 7.04 16.5885 7.41Z" fill={`${color}`} />
