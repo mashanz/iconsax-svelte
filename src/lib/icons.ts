@@ -454,7 +454,6 @@ import I3dSquare from '$lib/I3dSquare.svelte';
 import I3dcube from '$lib/I3dcube.svelte';
 import I3square from '$lib/I3square.svelte';
 import Icon from '$lib/Icon.svelte';
-import Icon1 from '$lib/Icon1.svelte';
 import Image from '$lib/Image.svelte';
 import Import from '$lib/Import.svelte';
 import Import1 from '$lib/Import1.svelte';
@@ -915,7 +914,6 @@ import Wallet2 from '$lib/Wallet2.svelte';
 import Wallet3 from '$lib/Wallet3.svelte';
 import WalletAdd from '$lib/WalletAdd.svelte';
 import WalletAdd1 from '$lib/WalletAdd1.svelte';
-import WalletAdd2 from '$lib/WalletAdd2.svelte';
 import WalletCheck from '$lib/WalletCheck.svelte';
 import WalletMinus from '$lib/WalletMinus.svelte';
 import WalletMoney from '$lib/WalletMoney.svelte';
@@ -3211,11 +3209,6 @@ export const icons = [
 	{
 		icon: Icon,
 		name: 'Icon',
-		category: ''
-	},
-	{
-		icon: Icon1,
-		name: 'Icon1',
 		category: ''
 	},
 	{
@@ -5516,11 +5509,6 @@ export const icons = [
 	{
 		icon: WalletAdd1,
 		name: 'WalletAdd1',
-		category: ''
-	},
-	{
-		icon: WalletAdd2,
-		name: 'WalletAdd2',
 		category: ''
 	},
 	{
