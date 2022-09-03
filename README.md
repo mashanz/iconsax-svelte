@@ -13,9 +13,9 @@
 ## Installation
 
 ```bash
-npm i iconsax-svelte
+npm i -D iconsax-svelte
 # or
-yarn add iconsax-svelte
+yarn add -D iconsax-svelte
 ```
 
 ## Basic usage
