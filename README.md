@@ -10,7 +10,7 @@
 
 [Iconsax Svelte Demo](https://iconsax-svelte.vercel.app/)
 
-## Installation
+## Installation on Dev Dependency
 
 ```bash
 npm i -D iconsax-svelte
