@@ -126,13 +126,19 @@
 </main>
 
 {#if showIconDetail}
-	<div class="absolute bottom-0 mx-auto md:right-10 w-full md:w-96 border border-gray-700 rounded-t-xl p-2 text-white bg-gray-900">
+	<div class="absolute bottom-0 mx-auto md:right-10 w-full md:w-[40rem] border border-gray-700 rounded-t-xl p-2 text-white bg-gray-900">
 		<div class="flex p-2">
-			<div class="font-bold">{selectedName}</div>
+			<div class="font-bold">Import</div>
 			<div class="flex-grow" />
 			<div class="btn" on:click={() => (showIconDetail = false)}>&#x2715;</div>
 		</div>
 
+		<div class="bg-gray-800 text-blue-500 rounded p-2 border-gray-700 border-2 font-mono text-sm mt-2">
+			{`<script>`}<br />	
+				&nbsp;&nbsp;<span class="text-blue-700">import</span> <span class="text-white">{selectedName}</span> from <span class="text-white">'iconsax-svelte/{selectedName}.svelte'</span>;<br/>
+			{`</script>`}
+		</div>
+		<div class="font-bold p-2">Usage</div>
 		<div class="bg-gray-800 rounded p-2 border-gray-700 border-2 font-mono text-sm mt-2">
 			<div class="text-gray-600">
 				&lt;<span class="text-orange-400 font-bold">{selectedName}</span>
